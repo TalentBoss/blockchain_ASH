@@ -5,13 +5,16 @@ async function main() {
   console.log(`deploying contract from: ${owner[0].address}`);
 
   //hardhat helper to get the ethers contractfactory object
-  const AvengerToken = await ethers.getContractFactory('AvengerToken');
+  const TokenContract = await ethers.getContractFactory('TokenContract');
 
   //Deploy the contract
-  console.log('Deploying AvengerToken');
-  const avengerToken = await AvengerToken.deploy();
-  await avengerToken.deployed();
-  console.log(`AvengerToken deployed to: ${avengerToken.address}`);
+  console.log('Deploying TokenContract');
+  const tokenContract = await TokenContract.deploy("SAYALI",
+  "SAY",
+  "10",
+  "1000000000000");
+  await tokenContract.deployed();
+  console.log(`TokenContract deployed to: ${tokenContract.address}`);
 }
 
 main()
