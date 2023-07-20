@@ -26,15 +26,6 @@ contract TokenContract is IERC20 {
     mapping(address => uint256) balances;
     mapping(address => mapping (address => uint256)) allowed;
 
-
-    // constructor()  {
-    //     name = "SAYALI";
-    //     symbol = "SAY";
-    //     decimals = 10;
-    //     totalSupply_ = 1000000000000;     
-    //     balances[msg.sender] = totalSupply_;
-    // }
-
     constructor(string memory _name_, string memory _symbol_, uint8 _decimals_, uint256 _totalSupply_)  {
     
         name = _name_;
