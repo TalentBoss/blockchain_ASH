@@ -23,5 +23,12 @@ $ npm install
 ### 4. Migrate Smart Contracts
 `npx hardhat run scripts/deploy.js --network sepolia`
 
-### 6. Run Tests
+### 6. You can get smart contract address
+0xF3Bef289B0dfD45c2EE5fa6F2c0DB6F46951fF0e
+
+###7. You can search this smart contract address on sepolia test net.
+https://sepolia.etherscan.io/address/0xF3Bef289B0dfD45c2EE5fa6F2c0DB6F46951fF0e
 `$ npx hardhat test`
+
+###8. Insall metamask chrome extension and create wallet.
+You can get wallet address and secret key.
