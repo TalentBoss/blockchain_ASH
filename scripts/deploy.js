@@ -9,8 +9,8 @@ async function main() {
 
   //Deploy the contract
   console.log('Deploying TokenContract');
-  const tokenContract = await TokenContract.deploy("SAYALI",
-  "SAY",
+  const tokenContract = await TokenContract.deploy("ASH_TOKEN",
+  "ASH",
   "10",
   "1000000000000");
   await tokenContract.deployed();

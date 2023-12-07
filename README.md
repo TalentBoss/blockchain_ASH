@@ -19,11 +19,9 @@ $ npm install
 ```
 ### 3. Boot up local development blockchain
 ```
-$ cd ERC20_Hardhat
-$ npx hardhat node
 ```
 ### 4. Migrate Smart Contracts
-`npx hardhat run scripts/deploy.js --network localhost`
+`npx hardhat run scripts/deploy.js --network sepolia`
 
 ### 6. Run Tests
 `$ npx hardhat test`
